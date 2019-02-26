@@ -1,0 +1,17 @@
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#bigfoot-logo {
+    width: 246px;
+}
+
+#site-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#show-information {
+    text-align: right;
+}
