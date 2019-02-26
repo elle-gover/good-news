@@ -1,10 +1,13 @@
 body {
-    margin: 0 auto;
+    margin: 10px auto;
     max-width: 1200px;
+    padding: 0 15px;
 }
 
 #bigfoot-logo {
     width: 246px;
+    /* Adding height to keep aspect ratio when flexbox shrinks image */
+    height: 100%; 
 }
 
 #site-header {
@@ -12,6 +15,33 @@ body {
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 600px) {
+    #site-header {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 #show-information {
     text-align: right;
+}
+
+#show-information h2 {
+    margin-top: 0;
+}
+
+#episode-listings {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.episode {
+    width: 200px;
+    height: 200px;
+}
+
+.episode img {
+    width: 100%;
+    height: 100%;
 }
