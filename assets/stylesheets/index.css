@@ -21,6 +21,17 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
+    #episode-listings {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #episode {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 #show-information {
@@ -34,14 +45,38 @@ body {
 #episode-listings {
     display: flex;
     justify-content: space-evenly;
+    margin: 10px 0;
 }
 
 .episode {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
 }
 
 .episode img {
     width: 100%;
     height: 100%;
 }
+
+.play-episode {
+    display: flex;
+    justify-content: center;
+}
+
+#play-image {
+    width: 250px;
+    height: 250px;
+    margin-right: 120px;
+}
+
+#tracklist {
+    margin-left: -20px;
+}
+
+#tracklist p {
+    flex-direction: column;
+
+}
+
+
